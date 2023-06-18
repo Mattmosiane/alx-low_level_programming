@@ -2,22 +2,28 @@
 
 /**
  * main - Entry
- *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int n;
+	int d, p;
 
-	for (n = 48; n < 58; n++)
+	for (d = '0'; d < '9'; d++)
 	{
-		putchar(n);
-		if (n != 57)
+		for (p = d + 1; p <= '9'; p++)
 		{
-			putchar(',');
-			putchar(' ');
+			if (p != d)
+			{
+				putchar(d);
+				putchar(p);
+				if (d == '8' && p == '9')
+					continue;
+				putchar(',');
+				putchar(' ');
+			}
 		}
-		putchar('\n');
-		return (0);
+	}
+	putchar('\n');
+	return (0);
 }
