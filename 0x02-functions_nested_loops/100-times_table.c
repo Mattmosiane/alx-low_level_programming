@@ -2,8 +2,8 @@
 
 /**
  * print_times_table - Prints the times table
+ * Starting with 0.
  * @n: Value of the times table to be printed
- * Return: Always 0
  */
 
 void print_times_table(int n)
@@ -17,7 +17,7 @@ void print_times_table(int n)
 		for (num = 0; num <= n; num++)
 		{
 			_putchar('0');
-			for (mult =1; mult <= n; mult++)
+			for (mult = 1; mult <= n; mult++)
 			{
 				_putchar(',');
 				_putchar(' ');
