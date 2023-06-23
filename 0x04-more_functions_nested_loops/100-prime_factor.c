@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "math.h"
+#include <math.h>
 
 /**
  * main - Prints the largets prime factor of the number 612852475143
