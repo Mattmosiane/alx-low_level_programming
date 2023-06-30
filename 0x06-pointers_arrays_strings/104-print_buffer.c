@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_buffer - Prints buffer
- * @b: Buffer
- * @size: Size
+ * print_buffer - prints buffer
+ * @b: buffer
+ * @size: size
  * Return: void
  */
 
@@ -26,7 +26,7 @@ void print_buffer(char *b, int size)
 		for (i = 0; i < 10; i++)
 		{
 			if (i < j)
-				printf("%02x ", *(b + o + i));
+				printf("%02x", *(b + o + i));
 			else
 				printf("  ");
 			if (i % 2)
