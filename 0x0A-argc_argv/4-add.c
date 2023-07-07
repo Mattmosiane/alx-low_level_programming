@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			e = argv[1];
+			e = argv[i];
 
 			for (k = 0; k < strlen(e); k++)
 			{
