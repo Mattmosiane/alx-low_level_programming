@@ -3,7 +3,7 @@
 
 /**
  * create_array - Creates an array of chars
- * @sixe: Size of an array
+ * @size: Size of an array
  * @c: char to fill in the array
  * Return: Array filled
  */
