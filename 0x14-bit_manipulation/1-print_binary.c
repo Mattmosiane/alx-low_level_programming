@@ -1,28 +1,26 @@
 #include "main.h"
 
 /**
- * print_binary - function that prints a binary num without %or/
- * @n: number to be printed
- * Return: 0
+ * print_binary - prints the binary equivalent of a decimal number
+ * @n: number to print in binary
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int min = 0, max = 32768;
+	int i, count = 0;
+	unsigned long int current;
 
-	if (n == 0)
+	for (i = 63; i >= 0; i--)
 	{
-		_putchar('0');
-		return;
-	}
-	while (max)
-	{
-		if (min == 1 && (n & max) == 0)
-			_putchar('0');
-		else if ((n & max) != 0)
+		current = n >> i;
+
+		if (current & 1)
 		{
 			_putchar('1');
-			min = 1;
+			count++;
 		}
-		max >>= 1;
+		else if (count)
+			_putchar('0');
 	}
+	if (!count)
+		_putchar('0');
 }
